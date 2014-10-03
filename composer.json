@@ -1,0 +1,8 @@
+{
+    "name": "ellrion/lamantin",
+    "require": {
+        "react/react": "0.4.*",
+        "intervention/image": "2.*",
+        "nikic/fast-route": "*"
+    }
+}
