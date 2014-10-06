@@ -1,0 +1,12 @@
+.idea/
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+.directory
+
+composer.lock
+composer.phar
+vendor
