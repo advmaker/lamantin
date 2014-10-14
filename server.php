@@ -12,7 +12,12 @@ $getImageProcess = new React\ChildProcess\Process(
 );
 $getImageProcess->on('exit', function($exitCode, $termSignal) use($imageManager, &$img, $filename) {
         echo "Get Image done \n";
+
         $img->destroy();
+
+        /* Delete the circular reference before instantiate a new Image */
+        unset($img->getDriver()->encoder->image);
+
         $img = $imageManager->make($filename);
     });
 
